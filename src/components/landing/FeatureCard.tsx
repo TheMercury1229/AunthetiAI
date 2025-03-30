@@ -1,7 +1,7 @@
-import type { JSX } from 'react';
-import { useState, useCallback, useRef, type MouseEvent } from 'react';
-import { motion, useMotionValue, frame } from 'motion/react';
-import * as variants from '@/motionVariants';
+import type { JSX } from "react";
+import { useState, useCallback, useRef, type MouseEvent } from "react";
+import { motion, useMotionValue, frame } from "motion/react";
+import * as variants from "@/motionVariants";
 type FeatureCardProps = {
   classes?: string;
   children: JSX.Element;
@@ -27,10 +27,10 @@ export const FeatureCard = ({ classes, children }: FeatureCardProps) => {
   return (
     <motion.div
       variants={variants.staggerContainer}
-      initial='start'
-      whileInView={'end'}
+      initial="start"
+      whileInView={"end"}
       viewport={{ once: true }}
-      className={`relative overflow-hidden p-[1px] ring ring-inset ring-zinc-800/50 rounded-[14px] ${classes} `}
+      className={`relative overflow-hidden p-[1px] ring ring-inset ring-zinc-400/50 dark:ring-zinc-800/50 rounded-[14px] ${classes} `}
     >
       <div
         ref={cardRef}
@@ -47,7 +47,7 @@ export const FeatureCard = ({ classes, children }: FeatureCardProps) => {
           setShowGlow(false);
         }}
         onMouseMove={handleMouseMove}
-        className='relative isolate bg-card backdrop-blur-md rounded-xl overflow-hidden'
+        className="relative isolate bg-card backdrop-blur-md rounded-xl overflow-hidden"
       >
         {children}
       </div>
@@ -57,7 +57,7 @@ export const FeatureCard = ({ classes, children }: FeatureCardProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: Number(showGlow) }}
         style={{ x, y }}
-        className='absolute -top-[150px] -left-[150px] rounded-full -z-10 w-[300px] h-[300px] bg-foreground blur-[50px]'
+        className="absolute -top-[150px] -left-[150px] rounded-full -z-10 w-[300px] h-[300px] bg-gray-600 dark:bg-foreground blur-[50px]"
       />
     </motion.div>
   );

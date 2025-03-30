@@ -53,7 +53,7 @@ export const Feature = () => {
                     variants={variants.fadeInUp}
                     className={`size-16 grid place-items-center rounded-full flex-shrink-0 ${iconBoxColor} `}
                   >
-                    <IconComponent />
+                    <IconComponent className="text-white" />
                   </motion.div>
                   <motion.h3
                     variants={variants.fadeInUp}

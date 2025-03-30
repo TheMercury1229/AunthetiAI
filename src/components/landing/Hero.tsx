@@ -66,21 +66,11 @@ export const Hero = () => {
             variants={heroChildVariants}
             initial="start"
             animate="end"
-            className="text-sm uppercase tracking-wider bg-secondary/50 text-secondary-foreground max-w-max mx-auto px-3 py-1 rounded-full border-t border-blue-500/10 backdrop-blur-3xl mb-6 md:mb-10"
+            className="text-sm uppercase tracking-wider bg-foreground/20 dark:bg-secondary/50 text-secondary-foreground max-w-max mx-auto px-3 py-1 rounded-full border-t border-blue-500/10 backdrop-blur-3xl mb-6 md:mb-10"
           >
             {heroData.sectionSubtitle}
           </motion.p>
 
-          {/* <motion.h2
-            variants={heroChildVariants}
-            className="text-4xl font-semibold !leading-tight mb-4 md:text-5xl md:mb-5 lg:text-6xl "
-          >
-            {heroData.sectionTitle}
-            <span className="relative isolate ms-4">
-              {heroData.decoTitle}
-              <span className="absolute -z-10 top-2 -left-6 -right-4 bottom-0.5 bg-foreground/5 rounded-full px-8 ms-3 border-t border-foreground/20 shadow-[inset_0px_0px_30px_0px] shadow-foreground/20 md:top-3 md:bottom-1 lg:bottom-2 lg:top-4" />
-            </span>
-          </motion.h2> */}
           <motion.h2
             variants={heroChildVariants}
             className="text-4xl font-semibold !leading-tight mb-4 md:text-5xl md:mb-5 lg:text-6xl"

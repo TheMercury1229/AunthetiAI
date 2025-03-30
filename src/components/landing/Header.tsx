@@ -47,7 +47,7 @@ export const Header = () => {
                                     <IconComponent />
                                   </div>
                                   <div>
-                                    <div className="text-[13px] leading-normal mb-1 text-white font-semibold">
+                                    <div className="text-[13px] leading-normal mb-1 text-gray-800 dark:text-white font-semibold">
                                       {label}
                                     </div>
                                     <p className="text-[13px] leading-normal text-muted-foreground">
